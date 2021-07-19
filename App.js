@@ -20,6 +20,8 @@ import {
 
 import StackNavigatorPage from './app/router/router.js'
 
+import SplashScreen from 'react-native-splash-screen'
+
 
 // import {
 //   Colors,
@@ -59,6 +61,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
   }
+  componentDidMount() {
+      // do stuff while splash screen is shown
+      // After having done stuff (such as async tasks) hide the splash screen
+      SplashScreen.hide(); // =>引入文件，调用该方法关闭启动图
+  }
+ 
   render() {
     return (
       // 兼容ios刘海屏

@@ -9,25 +9,30 @@ import ProductScreen from '../pages/Product/Product.js';
 
 import Text1 from '../pages/Test/Test1.js';
 
+const TabNavigator = createBottomTabNavigator({
+  Home: HomeScreen,
+  Mine: MineScreen,
+});
+
 const AppNavigator = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
-  },
-  Mine: {
-    screen: MineScreen, 
-  },
+  Tabs: TabNavigator,
+  // Home: {
+  //   screen: HomeScreen,
+  // },
+  // Mine: {
+  //   screen: MineScreen, 
+  // },
   Product: {
     screen: ProductScreen, 
   },
   // Test: {
   //   screen: Text1, 
   // }
+},{
+  headerMode: 'none',
 });
 
-const TabNavigator = createBottomTabNavigator({
-  Home: HomeScreen,
-  Mine: MineScreen,
-});
+
 
 export default createAppContainer(AppNavigator);
 

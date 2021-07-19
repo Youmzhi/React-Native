@@ -37,7 +37,7 @@ export default class Home extends React.Component {
   type='font-awesome'
   color='#f50'
   onPress={() => this.props.navigation.navigate('Product')} />
-        <Text>Home首页2</Text>
+        <Text>Home首页222</Text>
         <ThemeProvider>
           <Button 
             icon={
