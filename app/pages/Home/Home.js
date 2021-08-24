@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 // import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Button, ThemeProvider, Icon } from 'react-native-elements';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import Icons from 'react-native-vector-icons/FontAwesome';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -14,6 +14,12 @@ export default class Home extends React.Component {
         <Icon
   name='rowing' />
 
+{/* <Icon
+  name='aperture'
+  color='#00aced' /> */}
+
+  <Icons name="address-book" size={30} color="#900" />
+  
 <Icon
   name='g-translate'
   color='#00aced' />

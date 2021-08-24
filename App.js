@@ -68,9 +68,15 @@ class App extends React.Component {
   }
  
   render() {
+    // const isDarkMode = useColorScheme() === 'dark';
+
+    // const backgroundStyle = {
+    //   backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    // };
     return (
       // 兼容ios刘海屏
       <SafeAreaView style={styles.appContainer}>
+        {/* <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} /> */}
         <StackNavigatorPage />
       </SafeAreaView> 
       
